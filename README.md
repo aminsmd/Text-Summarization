@@ -18,3 +18,8 @@
 ### Based on input type
 * Single Document: Model creates the summary based on 1 paper or document.
 * Multiple Document: Model generates the summary based on multiple papers about a specific subject.
+
+## Our approach
+
+### TextRank algorithm
+The main idea in this approach is to find sentence embeddings by averaging vector representations of the words of sentence and assign the cosine similarity of those vectors to weights of a fully connected graph. Then perform a pagerank algorithm on this graph and chose the sentences with higher rank as the sentences of our extractive summary.
